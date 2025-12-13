@@ -1,0 +1,208 @@
+/* Section */
+.portfolio {
+  padding: 90px 0;
+  background: #f7f9fc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #6c7cff;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111827;
+  margin: 12px 0;
+}
+
+.section-title .highlight {
+  color: #5b7cfa;
+}
+
+.portfolio-subtitle {
+  max-width: 600px;
+  margin: auto;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+  background: #eef2ff;
+}
+
+.filter-btn.active {
+  background: #5b7cfa;
+  color: #ffffff;
+  border-color: #5b7cfa;
+}
+
+/* Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 50px;
+}
+
+/* Card */
+.portfolio-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Thumbnail */
+.thumbnail {
+  height: 200px;
+  position: relative;
+  padding: 14px;
+  overflow: hidden;
+}
+
+/* Browser dots */
+.browser-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.browser-dots span {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+/* Thumbnail Colors */
+.thumbnail.purple { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
+.thumbnail.pink { background: linear-gradient(135deg, #ec4899, #f472b6); }
+.thumbnail.blue { background: linear-gradient(135deg, #3b82f6, #60a5fa); }
+.thumbnail.green { background: linear-gradient(135deg, #22c55e, #4ade80); }
+.thumbnail.indigo { background: linear-gradient(135deg, #6366f1, #818cf8); }
+.thumbnail.orange { background: linear-gradient(135deg, #f97316, #fb923c); }
+
+/* Small video preview (DESKTOP DEFAULT) */
+.card-video {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 200px;          /* ✅ Bigger on desktop */
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  background: #000;
+  transition: transform 0.3s ease;
+}
+
+/* Desktop hover polish */
+@media (hover: hover) {
+  .portfolio-card:hover .card-video {
+    transform: scale(1.05);
+  }
+}
+
+/* Content */
+.portfolio-content {
+  padding: 22px;
+}
+
+.category-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #5b7cfa;
+  text-transform: uppercase;
+}
+
+.portfolio-content h3 {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #111827;
+}
+
+.portfolio-content p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ✅ Mobile adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 32px;
+  }
+
+  .thumbnail {
+    height: 160px;
+  }
+
+  /* 2 cards per row */
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .portfolio-content {
+    padding: 10px;
+  }
+
+  .portfolio-content h3 {
+    font-size: 12px;
+  }
+
+  .portfolio-content p {
+    font-size: 10px;
+  }
+
+  /* 🔹 Mobile video size (UNCHANGED as requested) */
+  .card-video {
+    width: 125px;
+    height: 118px;
+    bottom: 10px;
+    right: 10px;
+ 
+  }
+}
