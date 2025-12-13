@@ -5,55 +5,60 @@ const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('All Projects');
 
   const projects = [
-{
-  id: 1,
-  title: 'RyzenSports',
-  category: 'E-commerce',
-  description: 'High-energy sports jersey e-commerce website with bold visuals, smooth navigation, and a fast, mobile-first shopping experience.',
-  thumbnailColor: 'purple',
-  video: '/videos/ryze.mp4'
-},
-{
-  id: 2,
-  title: 'Memoroids',
-  category: 'E-commerce',
-  description: 'Personalized gifts and memory products store featuring an elegant design, product-focused layouts, and a seamless user experience.',
-  thumbnailColor: 'pink',
-  video: '/videos/mem.mp4'
-},
-{
-  id: 3,
-  title: "Doctor’s Portfolio",
-  category: 'Business',
-  description: 'Professional medical portfolio website showcasing services, expertise, and patient-focused care with a clean, modern interface.',
-  thumbnailColor: 'blue',
-  video: '/videos/doc.mp4'
-},
-{
-  id: 4,
-  title: 'FlashyFilters',
-  category: 'Business',
-  description: 'Photography portfolio website featuring stunning visuals, easy navigation, and a focus on showcasing creative work.',
-  thumbnailColor: 'green',
-  video: '/videos/flash.mp4'
-},
-{
-  id: 5,
-  title: 'Jewellery Shop',
-  category: 'E-commerce',
-  description: 'Luxury jewellery store website with elegant product displays, smooth browsing, and a refined shopping experience.',
-  thumbnailColor: 'orange',
-  video: '/videos/watch.mp4'
-},
-{
-  id: 6,
-  title: 'SFI Perinthalmanna',
-  category: 'Organization',
-  description: 'Informational website designed for a student organization, highlighting activities, initiatives, and community engagement.',
-  thumbnailColor: 'indigo',
-  video: '/videos/sfi.mp4'
-},
-
+    {
+      id: 1,
+      title: 'RyzenSports',
+      category: 'E-commerce',
+      description:
+        'High-energy sports jersey e-commerce website with bold visuals, smooth navigation, and a fast, mobile-first shopping experience.',
+      thumbnailColor: 'purple',
+      video: '/videos/ryze.mp4'
+    },
+    {
+      id: 2,
+      title: 'Memoroids',
+      category: 'E-commerce',
+      description:
+        'Personalized gifts and memory products store featuring an elegant design, product-focused layouts, and a seamless user experience.',
+      thumbnailColor: 'pink',
+      video: '/videos/mem.mp4'
+    },
+    {
+      id: 3,
+      title: "Doctor’s Portfolio",
+      category: 'Business',
+      description:
+        'Professional medical portfolio website showcasing services, expertise, and patient-focused care with a clean, modern interface.',
+      thumbnailColor: 'blue',
+      video: '/videos/doc.mp4'
+    },
+    {
+      id: 4,
+      title: 'FlashyFilters',
+      category: 'Business',
+      description:
+        'Photography portfolio website featuring stunning visuals, easy navigation, and a focus on showcasing creative work.',
+      thumbnailColor: 'green',
+      video: '/videos/flash.mp4'
+    },
+    {
+      id: 5,
+      title: 'Jewellery Shop',
+      category: 'E-commerce',
+      description:
+        'Luxury jewellery store website with elegant product displays, smooth browsing, and a refined shopping experience.',
+      thumbnailColor: 'orange',
+      video: '/videos/watch.mp4'
+    },
+    {
+      id: 6,
+      title: 'SFI Perinthalmanna',
+      category: 'Organization',
+      description:
+        'Informational website designed for a student organization, highlighting activities, initiatives, and community engagement.',
+      thumbnailColor: 'indigo',
+      video: '/videos/sfi.mp4'
+    }
   ];
 
   const filters = ['All Projects', 'Business', 'Portfolio', 'E-commerce'];
@@ -92,24 +97,29 @@ const Portfolio = () => {
           {filteredProjects.map(project => (
             <div key={project.id} className="portfolio-card">
               <div className={`thumbnail ${project.thumbnailColor}`}>
-  <div className="browser-dots">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+                <div className="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
 
-  {project.video && (
-    <video
-      className="card-video"
-      src={project.video}
-      muted
-      autoPlay
-      loop
-      playsInline
-    />
-  )}
-</div>
-
+                {project.video && (
+                  <video
+                    className="card-video"
+                    src={project.video}
+                    muted
+                    autoPlay
+                    loop
+                    playsInline
+                    preload="metadata"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  />
+                )}
+              </div>
 
               <div className="portfolio-content">
                 <span className="category-label">{project.category}</span>

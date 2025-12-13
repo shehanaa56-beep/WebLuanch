@@ -9,14 +9,13 @@ function WhatsAppButton() {
     <>
       <div className="wa-floating-btn" onClick={() => setOpen(true)}>
         <img
-  src="/images/whast.webp"
-  alt="WhatsApp"
-  width="60"
-  height="60"
-  loading="lazy"
-  decoding="async"
-/>
-
+          src="/images/whast.webp"
+          alt="WhatsApp"
+          width="60"
+          height="60"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
 
       {open && <WhatsAppPopup onClose={() => setOpen(false)} />}

@@ -25,20 +25,21 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
+        
+        {/* Logo */}
         <div className="logo">
-         <div className="logo">
-  <img
-    src="/images/2.webp"
-    alt="WEBLUANCH Logo"
-    className="logo-image"
-  />
-</div>
+          <img
+            src="/images/2.webp"
+            alt="WEBLUANCH Logo"
+            className="logo-image"
+          />
           <div className="brand-name">
             <span className="brand-web">WEB</span>
             <span className="brand-luach">LUACH</span>
           </div>
         </div>
 
+        {/* Navigation */}
         <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <ul className="nav-list">
             <li><a href="#about" onClick={closeMobileMenu}>About</a></li>
@@ -49,13 +50,16 @@ const Header = () => {
           </ul>
         </nav>
 
+        {/* CTA */}
         <div className="cta-container">
           <button className="cta-button">Get in touch</button>
         </div>
 
+        {/* Mobile Menu */}
         <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
           <span className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}></span>
         </div>
+
       </div>
     </header>
   );
