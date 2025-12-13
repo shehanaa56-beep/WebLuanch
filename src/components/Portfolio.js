@@ -106,17 +106,11 @@ const Portfolio = () => {
                 {project.video && (
                   <video
                     className="card-video"
-                    src={project.video}
+                    src={`${process.env.PUBLIC_URL}${project.video}`}
                     muted
                     autoPlay
                     loop
                     playsInline
-                    preload="metadata"
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover'
-                    }}
                   />
                 )}
               </div>

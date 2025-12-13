@@ -29,7 +29,7 @@ const Header = () => {
         {/* Logo */}
         <div className="logo">
           <img
-            src="/images/2.webp"
+            src={`${process.env.PUBLIC_URL}/images/2.webp`}
             alt="WEBLUANCH Logo"
             className="logo-image"
           />
