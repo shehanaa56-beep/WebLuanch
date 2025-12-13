@@ -28,7 +28,7 @@ const Header = () => {
         <div className="logo">
          <div className="logo">
   <img
-    src="/images/2.jpg"
+    src="/images/2.webp"
     alt="WEBLUANCH Logo"
     className="logo-image"
   />
