@@ -30,7 +30,7 @@ const Portfolio = () => {
       description:
         'Professional medical portfolio website showcasing services, expertise, and patient-focused care with a clean, modern interface.',
       thumbnailColor: 'blue',
-      video: '/videos/doc.mp4'
+       video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/doc_at8fke.mp4"
     },
     {
       id: 4,
