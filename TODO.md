@@ -1,7 +1,4 @@
-# TODO: Add WhatsApp Popup to React App
+# TODO: Update App Icon to 3.png
 
-- [x] Create WhatsAppPopup.js component
-- [x] Create WhatsAppButton.js component
-- [x] Create WhatsAppPopup.css styles
-- [x] Create WhatsAppButton.css styles
-- [x] Update App.js to include WhatsAppButton
+- [ ] Update public/manifest.json to use "3.png" as icon source
+- [ ] Update public/index.html to use "3.png" for favicon and apple-touch-icon
