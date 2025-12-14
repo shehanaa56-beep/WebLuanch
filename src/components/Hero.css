@@ -1,5 +1,5 @@
 .hero {
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 120px 0 80px;
   min-height: 100vh;
   display: flex;
@@ -11,10 +11,7 @@
 .hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-image:
     radial-gradient(circle at 20% 50%, rgba(107, 115, 255, 0.05) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.05) 0%, transparent 50%);
@@ -30,12 +27,13 @@
   z-index: 1;
 }
 
+/* Badge */
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #F0F8FF;
-  color: #6B73FF;
+  background: #f0f8ff;
+  color: #6b73ff;
   padding: 0.5rem 1rem;
   border-radius: 50px;
   font-size: 0.875rem;
@@ -48,10 +46,11 @@
 .badge-dot {
   width: 6px;
   height: 6px;
-  background: #6B73FF;
+  background: #6b73ff;
   border-radius: 50%;
 }
 
+/* Headings */
 .hero-headline {
   font-size: 3.5rem;
   font-weight: 800;
@@ -61,7 +60,7 @@
 }
 
 .highlight {
-  background: linear-gradient(135deg, #C77DFF, #6B73FF);
+  background: linear-gradient(135deg, #c77dff, #6b73ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -77,6 +76,7 @@
   margin-right: auto;
 }
 
+/* CTA */
 .hero-ctas {
   display: flex;
   justify-content: center;
@@ -86,7 +86,7 @@
 }
 
 .cta-primary {
-  background: linear-gradient(135deg, #C77DFF, #6B73FF);
+  background: linear-gradient(135deg, #c77dff, #6b73ff);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -108,213 +108,80 @@
 
 .arrow {
   font-size: 1.2rem;
-  transition: transform 0.3s ease;
 }
 
-.cta-primary:hover .arrow {
-  transform: translateX(3px);
-}
-
-.cta-secondary {
-  background: transparent;
-  color: #6B73FF;
-  border: 2px solid #6B73FF;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.cta-secondary:hover {
-  background: #6B73FF;
-  color: white;
-  transform: translateY(-2px);
-}
-
-.phone-icon {
-  font-size: 1.1rem;
-}
-
+/* TRUST SECTION – CLEAN & PERFECT */
 .trust-indicators {
-  margin-top: 2rem;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .trust-text {
-  font-size: 0.875rem;
-  color: #696969;
-  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 24px;
 }
 
 .trust-features {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
   justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  column-gap: 80px;
+  row-gap: 16px;
 }
 
 .feature {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  color: #696969;
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
 }
 
 .feature-dot {
-  width: 4px;
-  height: 4px;
-  background: #C77DFF;
+  width: 7px;
+  height: 7px;
+  background: #8b5cf6;
   border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-  .hero {
-    padding: 100px 0 60px;
-  }
-
-  .hero-headline {
-    font-size: 2.5rem;
-  }
-
-  .hero-subheadline {
-    font-size: 1rem;
-  }
-
-  .hero-ctas {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .trust-features {
-    gap: 1rem;
-  }
-
-  .feature {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-headline {
-    font-size: 2rem;
-  }
-
-  .trust-features {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-/* 🌟 Mobile Hero Beauty Upgrade */
-@media (max-width: 768px) {
-
   .hero {
     padding: 90px 0 60px;
     min-height: auto;
   }
 
-  .hero-container {
-    padding: 0 18px;
-  }
-
-  /* Badge */
-  .hero-badge {
-    font-size: 0.8rem;
-    padding: 0.45rem 0.9rem;
-    margin-bottom: 1.5rem;
-  }
-
-  /* Headline */
   .hero-headline {
     font-size: 2.2rem;
-    line-height: 1.15;
-    margin-bottom: 1.2rem;
   }
 
-  /* Sub headline */
   .hero-subheadline {
     font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 2.2rem;
   }
 
-  /* CTA buttons */
-  .hero-ctas {
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .cta-primary,
-  .cta-secondary {
+  .cta-primary {
     width: 70%;
     justify-content: center;
-    padding: 0.8rem 1rem;
-    font-size: 0.8rem;
-  }
-
-  /* Trust section */
-  .trust-indicators {
-    margin-top: 1.5rem;
-  }
-
-  .trust-text {
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .trust-features {
-    gap: 0.8rem;
-  }
-
-  .feature {
-    font-size: 0.8rem;
   }
 }
 
-/* Extra polish for very small phones */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .trust-features {
+    grid-template-columns: 1fr;
+  }
 
+  .feature {
+    justify-content: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
   .hero-headline {
     font-size: 1.9rem;
   }
-
-  .hero-subheadline {
-    font-size: 0.95rem;
-  }
-
-  .hero-badge {
-    font-size: 0.75rem;
-  }
-}
-/* Trust points – 2 per row on mobile */
-.trust-features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px 20px;
-  justify-items: center;
-}
-
-.feature {
-  width: 100%;
-  justify-content: center;
-}
-
-/* Optional: slightly smaller text on mobile */
-@media (max-width: 480px) {
-  .feature {
-    font-size: 0.8rem;
-  }
-}
-.phone-icon {
-  font-size: 1.1rem;
-  margin-right: 8px;
-  color: #6B73FF;
-}
-.phone-icon {
-  color: rgb(109, 155, 192);
 }
