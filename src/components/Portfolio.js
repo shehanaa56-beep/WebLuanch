@@ -12,8 +12,8 @@ const Portfolio = () => {
       description:
         'High-energy sports jersey e-commerce website with bold visuals, smooth navigation, and a fast, mobile-first shopping experience.',
       thumbnailColor: 'purple',
-      video: '/videos/ryze.mp4'
-    },
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/ryze_hxilaa.mp4 "
+       },
     {
       id: 2,
       title: 'Memoroids',
@@ -21,7 +21,7 @@ const Portfolio = () => {
       description:
         'Personalized gifts and memory products store featuring an elegant design, product-focused layouts, and a seamless user experience.',
       thumbnailColor: 'pink',
-      video: '/videos/mem.mp4'
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/mem_fwtfet.mp4"
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ const Portfolio = () => {
       description:
         'Photography portfolio website featuring stunning visuals, easy navigation, and a focus on showcasing creative work.',
       thumbnailColor: 'green',
-      video: '/videos/flash.mp4'
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/flash_rmv6ac.mp4"
     },
     {
       id: 5,
@@ -48,7 +48,7 @@ const Portfolio = () => {
       description:
         'Luxury jewellery store website with elegant product displays, smooth browsing, and a refined shopping experience.',
       thumbnailColor: 'orange',
-      video: '/videos/watch.mp4'
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/watch_cgs7es.mp4"
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ const Portfolio = () => {
       description:
         'Informational website designed for a student organization, highlighting activities, initiatives, and community engagement.',
       thumbnailColor: 'indigo',
-      video: '/videos/sfi.mp4'
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/sfi_oapmeo.mp4"
     }
   ];
 
