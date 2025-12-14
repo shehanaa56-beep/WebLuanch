@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import './Portfolio.css';
 
+// ✅ Import videos as variables
+import ryzeVideo from '../assets/videos/ryze.mp4';
+import memVideo from '../assets/videos/mem.mp4';
+import docVideo from '../assets/videos/doc.mp4';
+import flashVideo from '../assets/videos/flash.mp4';
+import watchVideo from '../assets/videos/watch.mp4';
+import sfiVideo from '../assets/videos/sfi.mp4';
+
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('All Projects');
 
@@ -12,7 +20,7 @@ const Portfolio = () => {
       description:
         'High-energy sports jersey e-commerce website with bold visuals, smooth navigation, and a fast, mobile-first shopping experience.',
       thumbnailColor: 'purple',
-      video: '/videos/ryze.mp4'
+      video: ryzeVideo
     },
     {
       id: 2,
@@ -21,7 +29,7 @@ const Portfolio = () => {
       description:
         'Personalized gifts and memory products store featuring an elegant design, product-focused layouts, and a seamless user experience.',
       thumbnailColor: 'pink',
-      video: '/videos/mem.mp4'
+      video: memVideo
     },
     {
       id: 3,
@@ -30,7 +38,7 @@ const Portfolio = () => {
       description:
         'Professional medical portfolio website showcasing services, expertise, and patient-focused care with a clean, modern interface.',
       thumbnailColor: 'blue',
-      video: '/videos/doc.mp4'
+      video: docVideo
     },
     {
       id: 4,
@@ -39,7 +47,7 @@ const Portfolio = () => {
       description:
         'Photography portfolio website featuring stunning visuals, easy navigation, and a focus on showcasing creative work.',
       thumbnailColor: 'green',
-      video: '/videos/flash.mp4'
+      video: flashVideo
     },
     {
       id: 5,
@@ -48,7 +56,7 @@ const Portfolio = () => {
       description:
         'Luxury jewellery store website with elegant product displays, smooth browsing, and a refined shopping experience.',
       thumbnailColor: 'orange',
-      video: '/videos/watch.mp4'
+      video: watchVideo
     },
     {
       id: 6,
@@ -57,7 +65,7 @@ const Portfolio = () => {
       description:
         'Informational website designed for a student organization, highlighting activities, initiatives, and community engagement.',
       thumbnailColor: 'indigo',
-      video: '/videos/sfi.mp4'
+      video: sfiVideo
     }
   ];
 
@@ -104,19 +112,15 @@ const Portfolio = () => {
                 </div>
 
                 {project.video && (
-               <video
-  className="card-video"
-  muted
-  autoPlay
-  loop
-  playsInline
->
-  <source
-    src={`${process.env.PUBLIC_URL}${project.video}`}
-    type="video/mp4"
-  />
-</video>
-
+                  <video
+                    className="card-video"
+                    muted
+                    autoPlay
+                    loop
+                    playsInline
+                  >
+                    <source src={project.video} type="video/mp4" />
+                  </video>
                 )}
               </div>
 
