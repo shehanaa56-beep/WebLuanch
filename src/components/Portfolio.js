@@ -68,9 +68,6 @@ const Portfolio = () => {
       ? projects
       : projects.filter(project => project.category === activeFilter);
 
-  // Debug flag: when true, render the raw asset URLs so you can open them in production
-  const DEBUG_ASSET_URLS = true;
-
   return (
     <section id="portfolio" className="portfolio">
       <div className="container">
@@ -95,21 +92,6 @@ const Portfolio = () => {
             </button>
           ))}
         </div>
-
-        {DEBUG_ASSET_URLS && (
-          <div className="asset-debug" style={{ marginBottom: 20 }}>
-            <strong>Debug — asset URLs:</strong>
-            <ul>
-              {projects.map((p) => (
-                <li key={`dbg-${p.id}`} style={{ fontSize: 12 }}>
-                  <a href={p.video} target="_blank" rel="noreferrer">
-                    {p.video}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
 
         <div className="portfolio-grid">
           {filteredProjects.map(project => (
