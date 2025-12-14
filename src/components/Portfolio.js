@@ -112,7 +112,7 @@ const Portfolio = () => {
   playsInline
 >
   <source
-    src="/WebLuanch${project.video}"
+    src={`${process.env.PUBLIC_URL}${project.video}`}
     type="video/mp4"
   />
 </video>

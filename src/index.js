@@ -5,6 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
+// Handle client-side routing for GitHub Pages
+const pathSegmentsToKeep = 1;
+const l = window.location;
+if (l.search[1] === '/') {
+  const decoded = l.search.slice(1).split('&').map(function(s) {
+    return s.replace(/~and~/g, '&')
+  }).join('?');
+  window.history.replaceState(null, null,
+    l.pathname.slice(0, -pathSegmentsToKeep) + decoded + l.hash
+  );
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
