@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import logo from "../assets/images/2.webp";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,11 +29,12 @@ const Header = () => {
         
         {/* Logo */}
         <div className="logo">
-          <img
-            src="/WebLuanch/images/2.webp"
-            alt="WEBLUANCH Logo"
-            className="logo-image"
-          />
+         <img
+  src={logo}
+  alt="WEBLUANCH Logo"
+  className="logo-image"
+/>
+
           <div className="brand-name">
             <span className="brand-web">WEB</span>
             <span className="brand-luach">LUACH</span>
