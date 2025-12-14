@@ -30,10 +30,6 @@ const Hero = () => {
           <div className="trust-features">
             <div className="feature">
               <span className="feature-dot"></span>
-              50+ Projects
-            </div>
-            <div className="feature">
-              <span className="feature-dot"></span>
               100% Satisfaction
             </div>
             <div className="feature">
