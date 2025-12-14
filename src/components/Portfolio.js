@@ -12,8 +12,8 @@ const Portfolio = () => {
       description:
         'High-energy sports jersey e-commerce website with bold visuals, smooth navigation, and a fast, mobile-first shopping experience.',
       thumbnailColor: 'purple',
-      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/ryze_hxilaa.mp4 "
-       },
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/ryze_hxilaa.mp4"
+    },
     {
       id: 2,
       title: 'Memoroids',
