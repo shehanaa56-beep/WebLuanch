@@ -40,6 +40,10 @@ const Hero = () => {
               <span className="feature-dot"></span>
               Fast Delivery
             </div>
+            <div className="feature">
+  <span className="feature-dot"></span>
+  Quality-Focused Development
+</div>
           </div>
         </div>
       </div>
