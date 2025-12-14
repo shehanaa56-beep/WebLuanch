@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import './Portfolio.css';
 
-// ✅ Import videos as variables
-
-
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('All Projects');
 
@@ -15,7 +12,7 @@ const Portfolio = () => {
       description:
         'High-energy sports jersey e-commerce website with bold visuals, smooth navigation, and a fast, mobile-first shopping experience.',
       thumbnailColor: 'purple',
-video: '/videos/ryze.mp4'
+      video: '/videos/ryze.mp4'
     },
     {
       id: 2,
@@ -51,7 +48,7 @@ video: '/videos/ryze.mp4'
       description:
         'Luxury jewellery store website with elegant product displays, smooth browsing, and a refined shopping experience.',
       thumbnailColor: 'orange',
-     video: '/videos/watch.mp4'
+      video: '/videos/watch.mp4'
     },
     {
       id: 6,
@@ -60,7 +57,7 @@ video: '/videos/ryze.mp4'
       description:
         'Informational website designed for a student organization, highlighting activities, initiatives, and community engagement.',
       thumbnailColor: 'indigo',
-     video: '/videos/sfi.mp4'
+      video: '/videos/sfi.mp4'
     }
   ];
 
@@ -107,15 +104,19 @@ video: '/videos/ryze.mp4'
                 </div>
 
                 {project.video && (
-                  <video
-                    className="card-video"
-                    muted
-                    autoPlay
-                    loop
-                    playsInline
-                  >
-                    <source src={project.video} type="video/mp4" />
-                  </video>
+               <video
+  className="card-video"
+  muted
+  autoPlay
+  loop
+  playsInline
+>
+  <source
+    src={`${process.env.PUBLIC_URL}${project.video}`}
+    type="video/mp4"
+  />
+</video>
+
                 )}
               </div>
 
