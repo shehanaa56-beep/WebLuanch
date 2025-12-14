@@ -104,14 +104,19 @@ const Portfolio = () => {
                 </div>
 
                 {project.video && (
-                  <video
-                    className="card-video"
-                    src={`${process.env.PUBLIC_URL}${project.video}`}
-                    muted
-                    autoPlay
-                    loop
-                    playsInline
-                  />
+               <video
+  className="card-video"
+  muted
+  autoPlay
+  loop
+  playsInline
+>
+  <source
+    src="/WebLuanch${project.video}"
+    type="video/mp4"
+  />
+</video>
+
                 )}
               </div>
 

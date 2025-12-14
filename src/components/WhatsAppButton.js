@@ -9,7 +9,7 @@ function WhatsAppButton() {
     <>
       <div className="wa-floating-btn" onClick={() => setOpen(true)}>
         <img
-  src={`${process.env.PUBLIC_URL}/images/whast.webp`}
+  src="/WebLuanch/images/whast.webp"
   alt="WhatsApp"
   width="60"
   height="60"
