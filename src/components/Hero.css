@@ -171,7 +171,9 @@
 
 @media (max-width: 600px) {
   .trust-features {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 12px;
   }
 
   .feature {
@@ -179,9 +181,9 @@
     font-size: 14px;
   }
 }
-
-@media (max-width: 480px) {
-  .hero-headline {
-    font-size: 1.9rem;
+@media (max-width: 400px) {
+  .trust-features {
+    column-gap: 20px;
   }
 }
+
