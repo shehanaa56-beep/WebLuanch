@@ -42,7 +42,7 @@ const Hero = () => {
             </div>
             <div className="feature">
   <span className="feature-dot"></span>
-  Quality-Focused Development
+  Quality-Development
 </div>
           </div>
         </div>

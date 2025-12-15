@@ -110,7 +110,7 @@
   font-size: 1.2rem;
 }
 
-/* TRUST SECTION – CLEAN & PERFECT */
+/* TRUST SECTION – PERFECT ALIGNMENT */
 .trust-indicators {
   margin-top: 40px;
   text-align: center;
@@ -125,15 +125,17 @@
 
 .trust-features {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
-  justify-content: center;
-  column-gap: 80px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 360px;
+  margin: 0 auto;
+  column-gap: 60px;
   row-gap: 16px;
 }
 
 .feature {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   font-size: 16px;
   color: #333;
   white-space: nowrap;
@@ -171,19 +173,17 @@
 
 @media (max-width: 600px) {
   .trust-features {
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
-    row-gap: 12px;
+    row-gap: 14px;
   }
 
   .feature {
-    justify-content: center;
     font-size: 14px;
   }
 }
+
 @media (max-width: 400px) {
   .trust-features {
-    column-gap: 20px;
+    column-gap: 24px;
   }
 }
-
