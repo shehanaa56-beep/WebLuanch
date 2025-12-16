@@ -28,7 +28,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: "Doctor’s Portfolio",
-      category: 'Business',
+      category: 'Portfolio',
       description:
         'Professional medical portfolio website showcasing services, expertise, and patient-focused care with a clean, modern interface.',
       thumbnailColor: 'blue',
@@ -64,10 +64,31 @@ const Portfolio = () => {
       thumbnailColor: 'indigo',
       video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/sfi_oapmeo.mp4",
       liveUrl: "https://sfiperinthalmanna.vercel.app"
-    }
+    },
+    {
+  id: 7,
+  title: 'FreshStart',
+  category: 'Business',
+  description:
+    'Modern startup website designed to introduce FreshStart’s mission, showcase services, and engage users with a clean, energetic interface.',
+  thumbnailColor: 'yellow',
+  video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/freshstart_design_uuemwi.mp4",
+  liveUrl: "https://freshstart-nine.vercel.app/"
+},
+{
+  id: 8,
+  title: 'TeamEvent',
+  category: 'Event Platform',
+  description:
+    'Dynamic event management website built to promote college team events, manage registrations, and provide clear event information.',
+  thumbnailColor: 'blue',
+  video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/team_design_1_odhemi.mp4",
+  liveUrl: "https://teamcollege.vercel.app/contact"
+}
+
   ];
 
-  const filters = ['All Projects', 'Business', 'Portfolio', 'E-commerce'];
+  const filters = ['All Projects', 'Business', 'Portfolio', 'E-commerce','Event Platform', 'Organization'];
 
   const filteredProjects =
     activeFilter === 'All Projects'
