@@ -206,3 +206,10 @@
  
   }
 }
+.card-video {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .card-video {
+  transform: scale(1.03);
+}

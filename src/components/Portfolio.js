@@ -12,7 +12,8 @@ const Portfolio = () => {
       description:
         'High-energy sports jersey e-commerce website with bold visuals, smooth navigation, and a fast, mobile-first shopping experience.',
       thumbnailColor: 'purple',
-      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/q_auto,f_auto/ryze_ya22rr.mp4"
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/q_auto,f_auto/ryze_ya22rr.mp4",
+      liveUrl: "https://ryzensports.vercel.app"
     },
     {
       id: 2,
@@ -21,7 +22,8 @@ const Portfolio = () => {
       description:
         'Personalized gifts and memory products store featuring an elegant design, product-focused layouts, and a seamless user experience.',
       thumbnailColor: 'pink',
-      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/mem_fwtfet.mp4"
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/mem_fwtfet.mp4",
+      liveUrl: "https://memoroids-e96r.vercel.app"
     },
     {
       id: 3,
@@ -30,7 +32,8 @@ const Portfolio = () => {
       description:
         'Professional medical portfolio website showcasing services, expertise, and patient-focused care with a clean, modern interface.',
       thumbnailColor: 'blue',
-       video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/doc_at8fke.mp4"
+       video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/doc_at8fke.mp4",
+       liveUrl: "https://doctorportt.vercel.app"
     },
     {
       id: 4,
@@ -39,7 +42,8 @@ const Portfolio = () => {
       description:
         'Photography portfolio website featuring stunning visuals, easy navigation, and a focus on showcasing creative work.',
       thumbnailColor: 'green',
-      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/flash_rmv6ac.mp4"
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/flash_rmv6ac.mp4",
+      liveUrl: "https://flashyfilters.vercel.app"
     },
     {
       id: 5,
@@ -48,7 +52,8 @@ const Portfolio = () => {
       description:
         'Luxury jewellery store website with elegant product displays, smooth browsing, and a refined shopping experience.',
       thumbnailColor: 'orange',
-      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/watch_cgs7es.mp4"
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/watch_cgs7es.mp4",
+      liveUrl: "https://jewellery-blush.vercel.app"
     },
     {
       id: 6,
@@ -57,7 +62,8 @@ const Portfolio = () => {
       description:
         'Informational website designed for a student organization, highlighting activities, initiatives, and community engagement.',
       thumbnailColor: 'indigo',
-      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/sfi_oapmeo.mp4"
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/sfi_oapmeo.mp4",
+      liveUrl: "https://sfiperinthalmanna.vercel.app"
     }
   ];
 
@@ -104,18 +110,18 @@ const Portfolio = () => {
                 </div>
 
                 {project.video && (
-                  <video
-                    className="card-video"
-                    muted
-                    autoPlay
-                    loop
-                    playsInline
-                  >
-                    <source
-                      src={project.video}
-                      type="video/mp4"
-                    />
-                  </video>
+               <video
+  className="card-video"
+  muted
+  autoPlay
+  loop
+  playsInline
+  onClick={() => window.open(project.liveUrl, "_blank")}
+  style={{ cursor: "pointer" }}
+>
+  <source src={project.video} type="video/mp4" />
+</video>
+
                 )}
               </div>
 
