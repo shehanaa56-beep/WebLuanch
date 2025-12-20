@@ -12,7 +12,7 @@ const About = () => {
               Who We <span className="highlight">Are</span>
             </h2>
             <p className="about-description">
-              WEBlUANCH is a modern web development brand focused on creating beautiful, fast, and scalable websites for businesses and individuals.
+              WEBLUANCH is a modern web development brand focused on creating beautiful, fast, and scalable websites for businesses and individuals.
             </p>
             <p className="about-description">
               We don't just build websites — we build online experiences that grow brands and convert visitors into loyal customers.

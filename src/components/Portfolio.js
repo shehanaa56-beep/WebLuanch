@@ -15,6 +15,16 @@ const Portfolio = () => {
       video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/q_auto,f_auto/ryze_ya22rr.mp4",
       liveUrl: "https://ryzensports.vercel.app"
     },
+       {
+      id: 1,
+      title: 'CurlyCase',
+      category: 'Business',
+      description:
+        'High-energy sports jersey e-commerce website with bold visuals, smooth navigation, and a fast, mobile-first shopping experience.',
+      thumbnailColor: 'purple',
+      video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/q_auto,f_auto/ryze_ya22rr.mp4",
+      liveUrl: "https://ryzensports.vercel.app"
+    },
     {
       id: 2,
       title: 'Memoroids',
