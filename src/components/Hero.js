@@ -19,10 +19,18 @@ const Hero = () => {
         </p>
 
         <div className="hero-ctas">
-          <button className="cta-primary">
-            Get in touch
-            <span className="arrow">→</span>
-          </button>
+ <button
+  className="cta-primary"
+  onClick={() =>
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+>
+  Get in touch
+  <span className="arrow">→</span>
+</button>
+
         </div>
 
         <div className="trust-indicators">

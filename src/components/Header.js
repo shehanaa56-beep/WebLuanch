@@ -51,10 +51,19 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* CTA */}
-        <div className="cta-container">
-          <button className="cta-button">Get in touch</button>
-        </div>
+       <div className="cta-container">
+  <button
+    className="cta-button"
+    onClick={() =>
+      document.getElementById("contact")?.scrollIntoView({
+        behavior: "smooth",
+      })
+    }
+  >
+    Get in touch
+  </button>
+</div>
+
 
         {/* Mobile Menu */}
         <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
