@@ -36,7 +36,7 @@ const Header = () => {
 
           <div className="brand-name">
             <span className="brand-web">WEB</span>
-            <span className="brand-luach">LUANCH</span>
+            <span className="brand-luach">LAUNCH</span>
           </div>
         </div>
 
