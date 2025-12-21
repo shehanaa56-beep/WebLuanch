@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       id: 1,
       text:
-        'WEBlUANCH delivered a stunning website that increased our leads by 100%. The attention to detail and understanding of our business goals was exceptional.',
+        'WEBLAUNCH delivered a stunning website that increased our leads by 100%. The attention to detail and understanding of our business goals was exceptional.',
       name: 'Rashik',
       role: 'owner',
       initial: 'S'
@@ -14,7 +14,7 @@ const Testimonials = () => {
     {
       id: 2,
       text:
-        'Working with WEBlUANCH was a game-changer. Our e-commerce site is fast, beautiful, and converts like never before. Highly recommended!',
+        'Working with WEBLAUNCH was a game-changer. Our e-commerce site is fast, beautiful, and converts like never before. Highly recommended!',
       name: 'Michael',
       role: 'Founder, StyleHub',
       initial: 'M'
