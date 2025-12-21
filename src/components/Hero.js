@@ -15,7 +15,7 @@ const Hero = () => {
         </h1>
 
         <p className="hero-subheadline">
-          WEBLAUNCH helps businesses grow online with modern, fast, and high-converting websites that leave a lasting impression.
+          WEBLUANCH helps businesses grow online with modern, fast, and high-converting websites that leave a lasting impression.
         </p>
 
         <div className="hero-ctas">
