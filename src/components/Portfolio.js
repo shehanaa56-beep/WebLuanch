@@ -26,6 +26,17 @@ const Portfolio = () => {
       liveUrl: "https://memoroids-e96r.vercel.app"
     },
     {
+  id: 2,
+  title: 'Curly Case',
+  category: 'E-commerce',
+  description:
+    'Modern phone case e-commerce website with a clean white–green theme, premium product presentation, and smooth, responsive shopping experience.',
+  thumbnailColor: 'green',
+  video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/v1767250954/curlycase_oxtdkf.mp4",
+  liveUrl: "https://curlycase.vercel.app"
+},
+
+    {
       id: 3,
       title: "Doctor’s Portfolio",
       category: 'Portfolio',
@@ -41,7 +52,7 @@ const Portfolio = () => {
       category: 'Business',
       description:
         'Photography portfolio website featuring stunning visuals, easy navigation, and a focus on showcasing creative work.',
-      thumbnailColor: 'green',
+      thumbnailColor: 'yelloww',
       video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/flash_rmv6ac.mp4",
       liveUrl: "https://flashyfilters.vercel.app"
     },
