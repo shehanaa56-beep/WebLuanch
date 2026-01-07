@@ -33,7 +33,7 @@ const Portfolio = () => {
     'Modern phone case e-commerce website with a clean white–green theme, premium product presentation, and smooth, responsive shopping experience.',
   thumbnailColor: 'green',
   video: "https://res.cloudinary.com/dp3g9pr0n/video/upload/v1767250954/curlycase_oxtdkf.mp4",
-  liveUrl: "https://curlycase.vercel.app"
+  liveUrl: "https://www.curlycase.store/"
 },
 
     {
